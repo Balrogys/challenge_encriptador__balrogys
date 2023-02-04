@@ -1,0 +1,208 @@
+
+body{
+
+   
+ 
+
+    font-family: 'Cinzel', serif;
+    line-height: 1;
+}
+
+.image-fondo {
+    
+        content: "";
+        background-image: url(imagenes/magician-3047235_1920.jpg);
+        background-size: cover;
+        position: absolute;
+        top: 0px;
+        right: 0px;
+        bottom: 0px;
+        left: 0px;
+        opacity: 0.3;
+        z-index: -100;
+  }
+ 
+  header{
+
+    position:relative;
+    padding: 24px;
+}
+
+main{
+    width: 940px;
+    margin: 0 auto;
+}
+
+
+h2{
+    
+    padding: 40px;
+top: 0%;
+bottom: 0%;
+
+}
+
+.caja{
+    position: relative;
+    margin: 0 auto;
+    width: 940px;
+   
+}
+main{
+    width: 940px;
+    margin: 0 auto;
+}
+
+textarea{
+    display: block;
+    margin: 0 0 20px;
+    padding: 10px 25px;
+    width: 50%;
+    opacity: .4;
+}
+
+form{
+    margin: 40px 0;
+}
+form label{
+display: block;
+font-size: 20px;
+margin: 0 0 10px;
+}
+
+nav li{
+    display: inline-block;
+    margin: 0 0 0 15px;
+}
+
+.imagen lateral{
+    padding: 40px;
+
+  width: 336px;
+height: 304px;
+left: 1032px;
+top: 400px;
+
+}
+
+
+.mensaje{
+    margin: 40px 0;
+    opacity: .2;
+}
+
+#encriptar{
+
+    position:static;
+        list-style-type: none;
+        display: inline-flex;
+        border: 1px solid #ebebeb;
+        border-radius: 5px;
+        margin: 0; padding: 0;
+  
+    display: block;
+    font-family: Arial;
+    font-weight: bold;
+    padding: 16px 30px;
+    text-decoration: none;
+    background: linear-gradient(#f2f2f2, #d8d8d8);
+    border-left: 1px solid #f6f6f6;
+    border-right: 1px solid #e4e4e4;
+    color: #88787a;
+    text-align: center;
+    margin: 0;
+    text-shadow: 0 0 2px rgba(0,0,0,.1);
+
+  
+        border-radius: 5px 0 0 5px;
+  
+        border-radius: 0 5px 5px 0;
+
+    }
+
+#encriptar:hover {
+    box-shadow: inset 1px 4px 6px 2px rgba(0,0,0,.1);
+    background: #ddd;
+}
+
+
+#desencriptar{
+
+    position:static;
+    list-style-type: none;
+    display: inline-flex;
+    border: 1px solid #ebebeb;
+    border-radius: 5px;
+    margin: 0; padding: 0;
+
+display: block;
+font-family: Arial;
+font-weight: bold;
+padding: 16px 30px;
+text-decoration: none;
+background: linear-gradient(#f2f2f2, #d8d8d8);
+border-left: 1px solid #f6f6f6;
+border-right: 1px solid #e4e4e4;
+color: #88787a;
+text-align: center;
+margin: 0;
+text-shadow: 0 0 2px rgba(0,0,0,.1);
+
+
+    border-radius: 5px 0 0 5px;
+
+    border-radius: 0 5px 5px 0;
+}
+
+#desencriptar:hover {
+box-shadow: inset 1px 4px 6px 2px rgba(0,0,0,.1);
+background: #ddd;
+}
+
+
+
+.btn-copiar{
+    position:static;
+    list-style-type: none;
+    display: inline-flex;
+    border: 1px solid #ebebeb;
+    border-radius: 5px;
+    margin: 0; padding: 0;
+
+display: inline-block;
+font-family: Arial;
+font-weight: bold;
+padding: 16px 30px;
+text-decoration: none;
+background: linear-gradient(#f2f2f2, #d8d8d8);
+border-left: 1px solid #f6f6f6;
+border-right: 1px solid #e4e4e4;
+color: #88787a;
+text-align: center;
+margin: 0 0 0 15px;
+text-shadow: 0 0 2px rgba(0,0,0,.1);
+
+
+    border-radius: 5px 0 0 5px;
+
+    border-radius: 0 5px 5px 0;
+
+}
+
+.btn-copiar:hover {
+    box-shadow: inset 1px 4px 6px 2px rgba(0,0,0,.1);
+    background: #ddd;
+    }
+
+
+    footer{
+      
+    }
+
+    .piedepagina{
+        color: white;
+        font-size: 13px;
+        margin: 20px;
+        
+        }
+    

@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+
+<html LANG="en">  
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width">
+        <title>ENCRIPTADOR CHALLENGE</title>
+        <link rel="stylesheet" href="reset.css">
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cinzel&display=swap" rel="stylesheet">
+
+
+    </head>
+	
+	
+<body>
+	
+
+						<header>encryption challenge
+
+
+							<div>
+								<h2>  <img src="imagenes/VectorLogoVector.png" alt="Logo Alura"> </h2>
+							</div>
+							
+						</header>
+					
+					
+						<div class="image-fondo"></div>
+
+					
+				
+				
+	<main>
+		
+			<form>
+
+					<label for="mensaje">write your spell	🪄label
+					<textarea class="text-input"name="input-texto" id="input-texto" cols="30" rows="10" placeholder="remember not to use capital letters or special characters/recuerde no usar mayusculas ni caracteres especiales.
+					"></textarea>
+					<label for="mensaje">performing your spell 	🪄</label>
+					<textarea class="salida-texto" type="text" id="transcripcion"></textarea>			
+					
+					<nav>
+						<ul>
+							<li>
+								<input type="button" name="encriptando" value="conjure" id="encriptar"></input>
+							</li>
+							<li>
+								<input type="button" name="desencriptando" value="break spell" id="desencriptar"></input>
+							</li>
+							<button class="btn-copiar">copy the conjured</button>
+							
+						</ul>
+						
+						
+					</nav>
+				
+				</form>
+				
+	
+				
+		</main>
+
+	<footer>
+		
+		<p class="piedepagina"> Balrogys SORCERER </p>
+	</footer>
+		
+
+	
+		
+
+
+
+	 </body>	
+	
+
+		 
+	
+
+</html>
+
+<script>
+
+	function encriptar()
+	{
+		var msg = document.querySelector("#input-texto").value;
+ 		//var msg = "mensaje de prueba de gato";
+  	
+		var  encriptacion=msg.replaceAll(/e/g, "enter").replaceAll(/i/g, "imes").replaceAll(/a/g, "ai").replaceAll(/o/g, "ober").replaceAll(/u/g, "ufat");
+       document.querySelector("#transcripcion").value = encriptacion;
+	
+		console.log(encriptacion); //devuelve el texto reemplazado
+
+}
+
+	var button=document.querySelector("#encriptar");
+	button.onclick=encriptar;
+	
+function desencriptar()
+{
+
+	var msg = document.querySelector("#input-texto").value;
+          
+   	var  desencriptacion=msg.replaceAll(/enter/g, "e").replaceAll(/imes/g, "i").replaceAll(/ai/g, "a").replaceAll(/ober/g, "o").replaceAll(/ufat/g, "u");
+	   document.querySelector("#transcripcion").value = desencriptacion;
+	console.log(desencriptacion); //devuelve el texto reemplazado
+
+	}
+
+		var button2=document.querySelector("#desencriptar");
+		button2.onclick=desencriptar;
+	
+
+	var btn_copiar = document.querySelector('.btn-copiar');
+
+	var btn_copiar = document.querySelector('.btn-copiar');
+
+btn_copiar.addEventListener('click', function(event) {
+		var copiado = document.querySelector('.salida-texto');
+		copiado.select();
+		try {
+			var retorno = document.execCommand('copy');
+			//var mensagem = retorno ? 'copiado!' : 'ops!';
+			//alert(mensagem);
+		} 
+		catch (err) {
+			alert('no fue posible copiar');
+		}
+});	
+
+</script>
